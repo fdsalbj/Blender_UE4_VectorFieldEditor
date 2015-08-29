@@ -427,7 +427,7 @@ class toggle_vectorfieldvelocities(bpy.types.Operator):
 	def modal(self, context, event):
 		if context.area:
 			context.area.tag_redraw()
-
+		
 		if context.window_manager.vf_showingvelocitylines == -1:
 			bpy.types.SpaceView3D.draw_handler_remove(self._handle, 'WINDOW')
 			context.window_manager.vf_showingvelocitylines = 0

@@ -13,6 +13,12 @@ Example .blend file with a few different vector fields available here: http://ww
 Archive with some .fga files exported from the above: http://www.mediafire.com/download/4x174fgf8lmec6g/VF_Examples.zip  
   
   
+*New feature: Volume Physics presets*
+- Allows quick changing of the physics properties of the particle system attached to a vector field volume
+  - Just a few test presets for now. More will be added in the near future.  
+    - to enable a preset on your volume, select the volume and go to the bottom of the *Create* panel to select a new preset from the dropdown menu.
+    - saving and deleting presets is possible with the + and - buttons on this dropdown menu.
+  
 ------------------------------------------------------------------------------------------------------- 
  
 ## Features  
@@ -33,7 +39,8 @@ Archive with some .fga files exported from the above: http://www.mediafire.com/d
 - Extract to your addons directory
 - Enable it in the addon manager (named *FGA Vector Field Tools*)
 - A new section called *Vector Fields* should be available in the tools panel 
- 
+- To use the Physics presets, copy the contents of the *presets* folder to Blender's presets folder (.../Blender/2.xx/scripts/presets)
+  
 --------------------------------------------------------------------------------------------------------- 
  
 ## Notes  
@@ -60,8 +67,16 @@ Archive with some .fga files exported from the above: http://www.mediafire.com/d
 ------------------------------------------------------------------------------------------------------- 
   
 ## Changelog:  
+
+- ***v1.1.0*** (current):  
+  - added initial support for presets:
+    - presets are enabled for the particle physics settings of vector field volumes
+    - currently only for Newtonian and Fluid physics settings  
+    - new presets can be added with the + and - buttons
+	- more presets and preset use cases will be added in the next few versions
   
-- ***v1.0.1*** (current):  
+  
+- ***v1.0.1***:  
   - renamed curve path tool to Wind Curve Force
   - added editor for created curve wind force strength, distance + falloff
   - the Ratio property should now work (apparently forgot to use the variable)  
